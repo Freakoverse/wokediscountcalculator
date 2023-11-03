@@ -1,0 +1,474 @@
+.htmlMain {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+.bodyMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background: #333333;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: 'Comic Neue';
+  word-break: break-word;
+  color: #ffffff;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.divMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*grid-gap: 25px;*/
+  flex-grow: 1;
+}
+
+.divMainSide {
+}
+
+.divMainSide.dMSTop {
+}
+
+.divMainSide.dMSBot {
+}
+
+.divMainMid {
+  flex-grow: 1;
+}
+
+.divMainSec {
+  display: flex;
+  flex-direction: row;
+}
+
+.divCustomContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  position: relative;
+}
+
+.divWokeElementsWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  padding: 25px 10px;
+}
+
+@media (max-width: 992px) {
+  .divWokeElementsWrapper {
+    padding: 10px 0px;
+  }
+}
+
+.divWokeElement {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*grid-gap: 20px;*/
+  /*padding: 25px;*/
+  height: 100%;
+}
+
+.divWokeElementLabel {
+  margin: 0;
+  line-height: 1;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.divWokeElementInput {
+  transition: ease 0.4s;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: solid 1px rgba(255,255,255,0.05);
+  background: rgba(0,0,0,0.1);
+  color: white;
+  padding: 10px 15px;
+}
+
+.divWokeElementInput:focus {
+  transition: ease 0.4s;
+  border: unset;
+  outline: unset;
+  background: rgba(0,0,0,0.15);
+}
+
+.point-input {
+}
+
+.divWokeElementGroup {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  padding: 0 20px 20px 20px;
+}
+
+.divWokeElementGroup.checkGroup {
+  flex-direction: row;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 0;
+  padding: 15px 20px 15px 60px;
+  background: rgba(0,0,0,0);
+  position: relative;
+  margin: 0 0 20px 0;
+  border-top: solid 1px rgba(255,255,255,0.05);
+  border-bottom: solid 1px rgba(255,255,255,0.05);
+}
+
+.divWokeElementMain {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  grid-gap: 25px;
+  padding: 0 0 25px 0;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+@media (max-width: 768px) {
+  .divWokeElementMain {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    padding: 0 0 25px 0;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+}
+
+.divWokeElementMainBox {
+  padding: 25px;
+  border-radius: 10px;
+  background: #444444;
+  box-shadow: 0 0 8px 0 rgb(0,0,0,0.1);
+}
+
+.divWokeElementMainBox.divWokeElementMainGame {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+
+.divWokeElementMainBox.divWokeElementMainResults {
+}
+
+.divWokeElementMainGameWrapper {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  margin: 0 0 20px 0;
+}
+
+.divWokeElementMainResultsWrapper {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  margin: 20px 0 0 0;
+}
+
+.divWokeElementMainResultsWrapperPara {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin: 0;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.divWokeElementMainGameButtons {
+}
+
+.divWokeElementMainGameButtonsBtn {
+  transition: ease 0.4s;
+  width: 100%;
+  background: #555555;
+  color: white;
+  font-weight: bold;
+  outline: unset;
+  border: unset;
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+.divWokeElementMainGameButtonsBtn:hover {
+  transition: ease 0.4s;
+  width: 100%;
+  background: #666666;
+  color: white;
+  font-weight: bold;
+  outline: unset;
+  border: unset;
+  letter-spacing: 1px;
+}
+
+.divWokeElementpPara {
+  margin: 0;
+  line-height: 1.25;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  /*border-radius: 7px;*/
+  padding: 15px;
+  /*background: rgba(0,0,0,0.1);*/
+  /*flex-grow: 1;*/
+}
+
+.divWokeElementLabel.dWELTitle {
+  text-align: center;
+  /*height: 50px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*border-radius: 7px;*/
+  /*border-bottom: solid 1px rgba(255,255,255,0.1);*/
+  padding: 20px 20px 0 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  letter-spacing: 1px;
+  font-size: 20px;
+  /*word-break: break-all;*/
+}
+
+.divWokeElementInputBox {
+  margin: 0!important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: unset;
+  border-radius: unset!important;
+  max-width: 50px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.form-check-input.divWokeElementInputBox:checked {
+  outline: unset;
+  box-shadow: unset;
+  border: unset;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.form-check-input.divWokeElementInputBox:focus {
+  outline: unset;
+  box-shadow: unset;
+  border: unset;
+}
+
+.form-check-input.divWokeElementInputBox:active {
+  outline: unset;
+  box-shadow: unset;
+  border: unset;
+}
+
+.divWokeElementWrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 8px 0 rgb(0,0,0,0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #444444;
+}
+
+.divWokeElementPic {
+  height: 250px;
+}
+
+.divWokeElementMainBox.divWokeElementMainInfo {
+  grid-gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.divWEW {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+@media (max-width: 1200px) {
+  .divWEW {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .divWEW {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 775px) {
+  .divWEW {
+    grid-template-columns: 1fr;
+  }
+}
+
+.divWokeElementMainInfoPara {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.vidMain {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.vidWrapperMain {
+  width: 100%;
+  padding-top: calc(100% / (16 / 9));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.divWokeElementMainBoxWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+}
+
+.divWokeElementpParaWrapper {
+  height: 100px;
+  overflow: auto;
+  margin: 0 0 20px 0;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  background: rgba(0,0,0,0.1);
+}
+
+.divWhen {
+  width: 100%;
+  padding: 20px;
+  border-radius: 6px;
+  /*border: solid 1px rgba(255,255,255,0.1);*/
+  background: rgba(0,0,0,0.1);
+}
+
+.divWhenPara {
+  margin: 0;
+  text-align: center;
+  padding: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.divWokeElementMainBoxPara {
+  margin: 0;
+}
+
+.divWokeElementMainBoxHeading {
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  font-weight: bold;
+  text-align: center;
+}
+
+.divWokeElementMainBoxPara.dWEMBP {
+  margin: 0 0 10px 0;
+}
+
+.divMainSecSides {
+  height: 100vh;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px 20px 100px 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .divMainSecSides {
+    display: none;
+    flex-grow: 0;
+  }
+}
+
+.divMainSecSides.divMainSecSidesRight {
+}
+
+.divMainSecMiddle {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divMainSecSidesPic {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 1500px;
+  background: rgba(0,0,0,0.1);
+  overflow: hidden;
+  border-radius: 8px;
+  /*border: solid 1px rgba(255,255,255,0.1);*/
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.25);
+}
+
+.divWokeElementMainResultsWrapperParaSpan {
+}
+
+.divWokeElementMainResultsWrapperParaSpan.dwemrwps {
+  text-align: center;
+  /*border: solid 1px rgba(255,255,255,0.1);*/
+  border-radius: 1000px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  font-weight: bold;
+}
+
+.divWokeElementMainResultsWrapperPara.dwemrwp {
+  padding: 10px;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.1);
+}
+
