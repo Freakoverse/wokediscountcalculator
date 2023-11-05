@@ -220,6 +220,17 @@
   letter-spacing: 1px;
 }
 
+.divWokeElementMainGameButtonsBtn:focus {
+  transition: ease 0.4s;
+  width: 100%;
+  background: #404040;
+  color: white;
+  font-weight: bold;
+  outline: unset;
+  border: unset;
+  letter-spacing: 1px;
+}
+
 .divWokeElementpPara {
   margin: 0;
   line-height: 1.25;
