@@ -26,5 +26,24 @@ function calculateDiscount() {
   const discountPrice = gamePrice * (1 - totalDiscountRate / 100);
 
   document.getElementById("discount-rate").textContent = totalDiscountRate.toFixed(2) + "%";
+  // Add a '$' symbol to the discount price
   document.getElementById("discount-price").textContent = "$" + discountPrice.toFixed(2);
+
+  // Call calculateDiscount here to update the message and style
+  updatePayYouMessage(discountPrice);
+}
+
+function updatePayYouMessage(discountPrice) {
+  const payYouParaSpan = document.getElementById("payYouParaSpan");
+  const payYou = document.getElementById("payYou");
+
+  if (discountPrice < 0) {
+    // Update the value within the span
+    payYouParaSpan.textContent = "$" + Math.abs(discountPrice).toFixed(2);
+    payYou.style.display = "block"; // Show the payYou element
+  } else {
+    // Reset the span value to 0
+    payYouParaSpan.textContent = "$0";
+    payYou.style.display = "none"; // Hide the payYou element
+  }
 }
