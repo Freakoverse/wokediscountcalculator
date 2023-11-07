@@ -512,3 +512,15 @@
   border-bottom: solid 1px rgba(255,255,255,0.1);
 }
 
+.vidGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.vidGridWrapper {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 25px;
+}
+
