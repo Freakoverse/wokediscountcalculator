@@ -524,3 +524,60 @@
   grid-gap: 25px;
 }
 
+.TabsMain {
+  width: 100%;
+}
+
+.TabsMainItems {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: unset;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 25px 0;
+  grid-gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .TabsMainItems {
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+}
+
+.TabsMainItemsTab {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: bold;
+  max-width: 350px;
+}
+
+@media (max-width: 768px) {
+  .TabsMainItemsTab {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+.nav-link.active.TabsMainItemsTabLink {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: unset;
+}
+
+.TabsMainItemsTabLink {
+  transition: ease 0.4s;
+  color: rgba(255,255,255,0.5);
+  border: unset!important;
+  border-radius: 12px!important;
+  padding: 10px;
+}
+
+.TabsMainItemsTabLink:hover {
+  transition: ease 0.4s;
+  border: unset;
+  color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.05);
+}
+
